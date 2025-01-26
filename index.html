@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crystal Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="crystal" id="mainCrystal">💎</div>
+        <div class="score">Crystals: <span id="score">0</span></div>
+        <button onclick="showShop()">Shop</button>
+        <button onclick="showPremium()">Premium</button>
+    </div>
+
+    <!-- Shop Modal -->
+    <div id="shopModal" class="modal">
+        <div class="modal-content">
+            <h2>Shop</h2>
+            <button onclick="buyUpgrade('autoClicker')">Auto-Clicker (50 crystals)</button>
+            <button onclick="buyUpgrade('multiplier')">2x Multiplier (100 crystals)</button>
+            <span class="close" onclick="closeModals()">&times;</span>
+        </div>
+    </div>
+
+    <!-- Premium Modal -->
+    <div id="premiumModal" class="modal">
+        <div class="modal-content">
+            <h2>Premium Features</h2>
+            <button class="premium-btn">Golden Crystal Skin (€2.99)</button>
+            <button class="premium-btn">Permanent 2x Boost (€4.99)</button>
+            <span class="close" onclick="closeModals()">&times;</span>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
